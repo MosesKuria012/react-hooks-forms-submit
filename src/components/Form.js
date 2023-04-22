@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 function Form(props) {
-  const [firstName, setFirstName] = useState("Sylvia");
-  const [lastName, setLastName] = useState("Woods");
+  const [firstName, setFirstName] = useState('Sylvia')
+  const [lastName, setLastName] = useState('Woods')
 
   function handleFirstNameChange(event) {
-    setFirstName(event.target.value);
+    setFirstName(event.target.value)
   }
 
   function handleLastNameChange(event) {
-    setLastName(event.target.value);
+    setLastName(event.target.value)
   }
 
   return (
@@ -18,7 +18,7 @@ function Form(props) {
       <input type="text" onChange={handleLastNameChange} value={lastName} />
       <button type="submit">Submit</button>
     </form>
-  );
+  )
 }
 
-export default Form;
+export default Form
